@@ -29,4 +29,5 @@ i will also add the assets i made
 https://drive.google.com/drive/folders/1aXsmfPmpGMWFrdb-ouMP7B7uqhSoGVxN?usp=sharing
 
 php
-pass-adminqa
+pass
+qa-admin
