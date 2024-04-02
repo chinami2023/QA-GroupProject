@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css"> <!-- assets/style.css のパスは適切に修正する必要があります -->
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Comment</h1>
+    </header>
+    <div class="threadWrapper">
+        <div class="childWrapper">
+            <h2>comment message</h2>
+           <section>
+            <article>
+                <div class="wrapper"> <!-- "warpper" から "wrapper" に修正 -->
+                    <div class="nameArea">
+                        <span>Name : </span>
+                    </div>
+                    <p class="username">Chinami</p>
+                </div>
+            </article>
+          </section>
+          <form class="formwrapper" method="POST">
+            <div>
+                <input type="submit" value="write" name="submitButton">
+                <label>Name : </label>
+                <input type="text" name="username"> <!-- "usernamr" から "username" に修正 -->
+            </div>
+            <div>
+                <textarea class="commentTextArea" name="body"></textarea> <!-- "commentTextAres" から "commentTextArea" に修正 -->
+            </div>
+          </form> <!-- </from> から </form> に修正 -->
+        </div>
+    </div>
+</body>
+</html>
