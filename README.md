@@ -31,3 +31,6 @@ https://drive.google.com/drive/folders/1aXsmfPmpGMWFrdb-ouMP7B7uqhSoGVxN?usp=sha
 php
 pass
 qa-admin
+
+
+https://qa-project.chinamiharashima.com/
