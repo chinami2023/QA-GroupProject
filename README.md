@@ -27,3 +27,7 @@ The other content, images, etc created for the project should also be delivered.
 -Alex if you can throw in the stuff you have designed 
 i will also add the assets i made
 https://drive.google.com/drive/folders/1aXsmfPmpGMWFrdb-ouMP7B7uqhSoGVxN?usp=sharing
+
+php
+pass
+qa-admin
