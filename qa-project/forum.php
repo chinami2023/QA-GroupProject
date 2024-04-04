@@ -134,7 +134,6 @@ $comment_array = $statement->fetchAll(PDO::FETCH_ASSOC);
                     </diV> 
                 </div>
                 </article>
-                <?php endforeach ?>
                </div>
                <!-- col-6 -->
 
