@@ -117,8 +117,9 @@ $comment_array = $statement->fetchAll(PDO::FETCH_ASSOC);
                 <?php foreach($comment_array as $comment) :?>
                 <article>
                 <div class="wrapper">
-                    <div class="grid">
-                        <div class="col-4" class="threeboxs">
+                <div class="grid">
+                    <?php foreach($comment_array as $comment) :?>
+                        <div class="col-4 boxstyle" class="threeboxs">
                         <div class="nameArea">
                         <!-- <span>Name :  </span> -->
                         <p class="username"><?php echo $comment["username"] ?> </p>
@@ -128,8 +129,7 @@ $comment_array = $statement->fetchAll(PDO::FETCH_ASSOC);
                         <?php echo $comment["body"];?>
                         </p>
                         </div>
-                        <div class="col-4"></div>
-                        <div class="col-4"></div>
+                        <?php endforeach ?>
 
                     </diV> 
                 </div>
