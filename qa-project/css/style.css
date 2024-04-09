@@ -4,6 +4,11 @@
 	padding: 0;
 }
 
+@font-face {
+	font-family: Saiyan-Sans;
+	src: url(../fonts/Saiyan-Sans.ttf) format("truetype") ;
+}
+
 html{
 	font-size: 16px;
 }
@@ -33,13 +38,14 @@ header{
 
 /* nav styles */
 
-/* .logo{
+.logo{
 	width: 60px;
-	height: 60px;
+	height: auto;
 	position: absolute;
-	top: 0.5em;
+	top: 0.6em;
 	left: 2em;
-} */
+	align-items: baseline;
+}
 
 nav{
 	text-align:center;
@@ -101,13 +107,24 @@ a:hover{
 	padding-top: 1.5rem;
 }
 
-.TopText{
-	text-align: center;
+.TopText .textpink{
+	font-family: Saiyan-Sans;
+	font-size: 5rem;
+	-webkit-text-stroke-width: 4px;
+	-webkit-text-stroke-color: #FFD7C1;
 }
 
-.TopText img{
-	max-width: 28%;
-	width: 28%;
+.TopText .textwhite{
+	font-family: Saiyan-Sans;
+	font-size: 1.8rem;
+	color: whitesmoke;
+	 -webkit-text-stroke:2px #333;
+}
+
+.TopText{
+	width: 40%;
+	padding-right: 3rem;
+	margin: 0 0 0 auto;
 }
 
 .section2{
@@ -263,111 +280,32 @@ footer a{
 	text-decoration: none;
 }
 
-/* ---- */
-
-.slider {/*横幅94%で左右に余白を持たせて中央寄せ*/
-    width:94%;
-    margin:0 auto;
+/* スライド */
+ul.bxslider
+{
+margin: 0px !important;
+padding: 0px !important;
+}
+/* 画像スライダーの外枠設定 */
+.bx-wrapper {
+  margin: 0 !important;
+  -moz-box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  border: none !important;
+  background: none !important;
+}
+/* 画像サイズの設定 */
+.bxslider img{
+  width: 100% !important;
+  height: auto !important;
 }
 
-.slider img {
-    width:60vw;/*スライダー内の画像を60vwにしてレスポンシブ化*/
-    height:auto;
+.w80{
+	width: 53%;
+	max-width: 80%;
+	height: auto;
 }
-
-.slider .slick-slide {
-  transform: scale(0.8);/*左右の画像のサイズを80%に*/
-  transition: all .5s;/*拡大や透過のアニメーションを0.5秒で行う*/
-  opacity: 0.5;/*透過50%*/
-}
-
-.slider .slick-slide.slick-center{
-  transform: scale(1);/*中央の画像のサイズだけ等倍に*/
-  opacity: 1;/*透過なし*/
-}
-
-
-/*矢印の設定*/
-
-/*戻る、次へ矢印の位置*/
-.slick-prev, 
-.slick-next {
-    position: absolute;/*絶対配置にする*/
-    top: 42%;
-    cursor: pointer;/*マウスカーソルを指マークに*/
-    outline: none;/*クリックをしたら出てくる枠線を消す*/
-    border-top: 2px solid #666;/*矢印の色*/
-    border-right: 2px solid #666;/*矢印の色*/
-    height: 15px;
-    width: 15px;
-}
-
-.slick-prev {/*戻る矢印の位置と形状*/
-    left: -1.5%;
-    transform: rotate(-135deg);
-}
-
-.slick-next {/*次へ矢印の位置と形状*/
-    right: -1.5%;
-    transform: rotate(45deg);
-}
-
-/*ドットナビゲーションの設定*/
-
-.slick-dots {
-    text-align:center;
-  margin:20px 0 0 0;
-}
-
-.slick-dots li {
-    display:inline-block;
-  margin:0 5px;
-}
-
-.slick-dots button {
-    color: transparent;
-    outline: none;
-    width:8px;/*ドットボタンのサイズ*/
-    height:8px;/*ドットボタンのサイズ*/
-    display:block;
-    border-radius:50%;
-    background:#ccc;/*ドットボタンの色*/
-}
-
-.slick-dots .slick-active button{
-    background:#333;/*ドットボタンの現在地表示の色*/
-}
-
-
-/*========= レイアウトのためのCSS ===============*/
-
-body{
-  background:#eee;
-}
-
-h2,p {
-    text-align:center;
-    padding:20px;
-}
-
-ul{
-  margin:0;
-  padding: 0;
-  list-style: none;
-}
-
-a{
-  color: #333;
-}
-
-a:hover,
-a:active{
-  text-decoration: none;
-}
-
-
-
-/* ---- */
 
 
 h1{
@@ -402,63 +340,18 @@ h2{
 	margin-bottom: 0;
 }
 
-
-
-
-/* footer styles */
-/* footer{
-	height: 100px;
-	width: 100%;
-	background: #ddd;
-	padding-top: 50px;
-	position: absolute;
+.nav-line{
+	border-bottom:solid;
+    border-color:#FBBC42;
+	border-width:2px;
+	padding-right: 3px;
+	padding-left: 3px;
 }
 
- */
 
 
 
 /* media query */
-
-/* over 375px : mobile */
-@media (min-width: 320px) {
-
-	.photo6{
-		width: 100%;
-	}
-
-	.photo4,.photo5{
-		min-height: 200px;
-		background-position: center;
-	}
-
-	h2{
-		margin-top: 2em;
-		margin-bottom: 1em;
-	}
-
-}
-
-@media (max-width: 820px) {
-	 .grid-container{
-		max-width: 100%;
-	}
-        .hukidasi {
-			position: absolute;
-			top: 450px;
-			z-index: 0;
-			text-align: center;
-			justify-content: center;
-			left: 150px;
-		}
-		.name-akira{
-			left: 250px;
-			top:500px;
-		}
-
-    
-}
-
 
 /* over 600px : tablet */
 @media (min-width: 768px) {
@@ -485,19 +378,538 @@ h2{
 		height: 500px;
 	}
 
-	.photo4,.photo5{
-		min-height: 300px;
-	}
 }
 
 /* Larger than phablet */
 @media (min-width: 900px) {
-
+	.TopText {
+		width: 80%;
+		/* padding-right: 3rem; */
+		margin: 0 auto;
+	}
 	
 }
 
 /* PC */
+@media (min-width: 2200px) {
+	.hukidashi2 {
+		top: 1604px;
+		left: 159px;
+		width: 33%;
+	}
+
+	.hiswork {
+		top: 1746px;
+		left: 323px;
+		width: 23%;
+	}
+
+}
+
+@media (min-width: 1919px) {
+	.akira{
+		width: 100%;
+	}
+
+	.hukidasi {
+		top: 500px;
+		left: 768px;
+		width: 40%;
+		}
+
+		.name-akira{
+			top: 613px;
+			left: 998px;
+			width: 20%;
+		}
+
+		.rightbox{
+			font-size: 32px;
+		}
+
+		.hukidashi2 {
+			top: 1812px;
+			left: 673px;
+			width: 33%;
+		}
+
+		.hiswork {
+			top: 1918px;
+			left: 795px;
+			width: 23%;
+		}
+
+}
+
 @media (min-width: 1200px) {
+	.TopText{
+		width: 40%;
+		margin: 0 0 0 auto;
+	}
+
+}
+
+@media (max-width: 1025px) {
+
+	.section2{
+		height: 50vh;
+		padding-top: 0;
+	}
+
+	 .grid-container{
+		max-width: 100%;
+		margin-top: 180px;
+	}
+     .hukidasi {
+		top: 450px;
+		left: 280px;
+		}
+
+		.name-akira{
+			top: 500px;
+			left: 380px;
+		}
 	
+		.rightbox{
+			align-self: baseline;
+            padding-top: 100px;
+		}
+		
+		.section3{
+			height: 50vh;
+		}
+
+		.w80{
+			margin-top: 100px;
+		}
+
+		.hukidashi2 {
+			top: 1100px;
+			left: 250px;
+		}
+
+		.hiswork {
+			top: 1200px;
+			left: 342px;
+		}
+		
+}
+
+@media (max-width: 896px) {
+	.banner{
+		height: 300px;
+	}
+}
+
+
+@media screen and (max-width: 835px) {
+	.no-br{
+	display: none;
+	}
+	}
+
+@media (max-width: 820px) {
+	.logo{
+		top: 1em;
+		display: none;
+	}
+
+	.banner{
+		height: auto;
+
+	}
+
+	.TopText {
+		width: 80%;
+		margin: 0 auto;
+	}
+
+	.section2{
+		height: 60vh;
+	}
+
+	 .grid-container{
+		max-width: 100%;
+		margin-top: 180px;
+	}
+	
+     .hukidasi {
+			position: absolute;
+			top: 420px;
+			z-index: 0;
+			text-align: center;
+			justify-content: center;
+			left: 150px;
+		}
+		.name-akira{
+			left: 250px;
+			top:460px;
+		}
+	
+		.rightbox{
+			padding-bottom: 0;
+		}
+		.rightbox p{
+			padding-bottom: 1rem;
+		}
+
+		.section3{
+			height: 50vh;
+		}
+
+		.w80{
+			margin-top: 100px;
+		}
+
+		.hukidashi2 {
+			top: 1057px;
+			left: 170px;
+		}
+
+		.hiswork {
+			top: 1148px;
+			left: 273px;
+		}
+	}
+
+	@media (max-width: 770px) {
+		.hukidasi {
+			top: 374px;
+			width: 48%;
+			left: 166px;
+		}
+
+		.name-akira {
+			left: 250px;
+			top: 411px;
+			width: 29%;
+		}
+
+		.section3 {
+			height: 70vh;
+	}
+
+	.hukidashi2 {
+		top: 809px;
+		width: 45%;
+		left: 194px;
+	}
+
+	.hiswork {
+		top: 875px;
+		width: 30%;
+		left: 266px;
+	}
+
+
+}
+
+@media (max-width: 594px) {
+
+	.TopText .textpink {
+		font-size: 3rem;
+	}
+
+	.TopText .textwhite {
+		font-size: 1.3rem;
+	}
+
+	.with80 {
+       width: 100%;
+	}
+
+	.section2{
+		height: 70vh;
+	}
+
+	.grid-container{
+		max-width: 100%;
+        margin-top: 180px;
+        /* margin-left: 58px; */
+	}
+
+	.grid-container img{
+		max-width: 100%;
+		/* width: 100%; */
+	}
+
+	.rightbox {
+		padding-top: 10px;
+	}
+
+	.hukidasi{
+		width: 56%;
+       top: 270px;
+       left: 140px;
+	}
+
+	.name-akira{
+		width: 32%;
+		top: 312px;
+		left: 225px;
+	}
+
+	.hukidashi2{
+			width: 54%;
+			top: 747px;
+			left: 133px;
+	
+	}
+
+	.hiswork {
+		width: 40%;
+    top: 814px;
+    left: 175px;
+	}
+
+	.section3 {
+		height: 60vh;
+	}
+
+	.w80{
+		margin-top: 30px;
+		padding-bottom: 1rem;
+	}
+
+	.section4 {
+		height: auto;
+
+	}
+
+	.section4 img{
+		width: 80%;
+	}
+
+	.btn--orange, a.btn--orange {
+		color: #fff;
+		background-color: #FBBC42;
+		text-decoration: none;
+		padding: 1rem 2rem;
+		margin-top: 2rem;
+		margin-bottom: 1rem;
+	}
+
+}
+
+@media (max-width: 415px) {
+
+	.section2 {
+		height: 54vh;
+	}
+
+	.rightbox p {
+		font-size: 12px;
+	}
+
+	.hukidasi{
+		width: 56%;
+		top: 316px;
+        left: 88px;
+	}
+
+	.name-akira{
+		width: 34%;
+		top: 340px;
+        left: 140px;
+	}
+
+	.section3 {
+		height: 340px;
+	}
+
+	.hukidashi2{
+		width: 58%;
+		top: 680px;
+        left: 77px;
+	}
+
+	.hiswork {
+		width: 40%;
+        top: 725px;
+        left: 120px;
+	}
+
+	.btn--orange, a.btn--orange {
+		color: #fff;
+		background-color: #FBBC42;
+		text-decoration: none;
+		padding: 1rem 2rem;
+		margin-top: 2rem;
+		margin-bottom: 1rem;
+	}
+
+}
+
+@media (max-width: 391px) {
+	.grid-container{
+		margin-top: 90px;
+	}
+	.name-akira {
+		width: 34%;
+		top: 358px;
+		left: 140px;
+	}
+
+	.hukidasi {
+		width: 56%;
+		top: 340px;
+		left: 88px;
+	}
+
+	.hiswork {
+		width: 40%;
+		top: 796px;
+		left: 116px;
+	}
+
+	
+.hukidashi2 {
+    width: 58%;
+    top: 748px;
+    left: 74px;
+}
+
+.btn--orange, a.btn--orange {
+    color: #fff;
+    background-color: #FBBC42;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+} 
+}
+
+@media (max-width: 378px) {
+
+	.with80 {
+		margin-bottom: 0;
+	}
+
+	.section2 {
+		height: 42vh;
+	}
+
+	.name-akira {
+		width: 24%;
+    top: 333px;
+    left: 132px;
+	}
+
+	.hukidasi {
+		width: 40%;
+		top: 317px;
+		left: 94px;
+	}
+
+	/* .section3 {
+		height: 57vh;
+	} */
+
+	.hiswork {
+		width: 35%;
+		top: 679px;
+		left: 127px;
+	}
+
+	.hukidashi2 {
+		width: 50%;
+		top: 643px;
+		left: 92px;
+	}
+
+	.btn--orange, a.btn--orange {
+		color: #fff;
+		background-color: #FBBC42;
+		text-decoration: none;
+		padding: 1rem 2rem;
+		margin-top: 2rem;
+		margin-bottom: 1rem;
+	}
+	
+}
+
+/* grid */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 1rem;
+}
+
+.col-1 { grid-column: span 1; }
+.col-2 { grid-column: span 2; }
+.col-3 { grid-column: span 3; }
+.col-4 { grid-column: span 4; }
+.col-5 { grid-column: span 5; }
+.col-6 { grid-column: span 6; }
+.col-7 { grid-column: span 7; }
+.col-8 { grid-column: span 8; }
+.col-9 { grid-column: span 9; }
+.col-10 { grid-column: span 10; }
+.col-11 { grid-column: span 11; }
+.col-12 { grid-column: span 12; }
+
+@media screen and (min-width: 375px) {
+	.col-1-xsm { grid-column: span 1; }
+    .col-2-xsm { grid-column: span 2; }
+    .col-3-xsm { grid-column: span 3; }
+    .col-4-xsm { grid-column: span 4; }
+    .col-5-xsm { grid-column: span 5; }
+    .col-6-xsm { grid-column: span 6; }
+    .col-7-xsm { grid-column: span 7; }
+    .col-8-xsm { grid-column: span 8; }
+    .col-9-xsm { grid-column: span 9; }
+    .col-10-xsm { grid-column: span 10; }
+    .col-11-xsm { grid-column: span 11; }
+    .col-12-xsm { grid-column: span 12; }
+}
+
+@media screen and (min-width: 568px) {
+    
+    .col-1-sm { grid-column: span 1; }
+    .col-2-sm { grid-column: span 2; }
+    .col-3-sm { grid-column: span 3; }
+    .col-4-sm { grid-column: span 4; }
+    .col-5-sm { grid-column: span 5; }
+    .col-6-sm { grid-column: span 6; }
+    .col-7-sm { grid-column: span 7; }
+    .col-8-sm { grid-column: span 8; }
+    .col-9-sm { grid-column: span 9; }
+    .col-10-sm { grid-column: span 10; }
+    .col-11-sm { grid-column: span 11; }
+    .col-12-sm { grid-column: span 12; }
+
+}
+
+@media screen and (min-width: 834px) {
+    
+    .col-1-md { grid-column: span 1; }
+    .col-2-md { grid-column: span 2; }
+    .col-3-md { grid-column: span 3; }
+    .col-4-md { grid-column: span 4; }
+    .col-5-md { grid-column: span 5; }
+    .col-6-md { grid-column: span 6; }
+    .col-7-md { grid-column: span 7; }
+    .col-8-md { grid-column: span 8; }
+    .col-9-md { grid-column: span 9; }
+    .col-10-md { grid-column: span 10; }
+    .col-11-md { grid-column: span 11; }
+    .col-12-md { grid-column: span 12; }
+
+}
+
+@media screen and (min-width: 1080px) {
+    
+    .col-1-lg { grid-column: span 1; }
+    .col-2-lg { grid-column: span 2; }
+    .col-3-lg { grid-column: span 3; }
+    .col-4-lg { grid-column: span 4; }
+    .col-5-lg { grid-column: span 5; }
+    .col-6-lg { grid-column: span 6; }
+    .col-7-lg { grid-column: span 7; }
+    .col-8-lg { grid-column: span 8; }
+    .col-9-lg { grid-column: span 9; }
+    .col-10-lg { grid-column: span 10; }
+    .col-11-lg { grid-column: span 11; }
+    .col-12-lg { grid-column: span 12; }
 
 }

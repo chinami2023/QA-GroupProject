@@ -1,0 +1,15 @@
+input {
+    width: 200px;
+    padding: 5px;
+    font-size: 18px;
+    border: 2px solid #a9a9a9; 
+  }
+  
+  .btn{
+      background-color: #a9a9a9;
+      margin-top: 30px;
+      width: 210px;
+      padding: 5px;
+      border-radius: 3px;
+      transition: .3s ease-out;
+    }
