@@ -1,36 +1,27 @@
 # QA-GroupProject
-Deliverables:
-2 - 3 Project Brainstorming Documents (Mind-maps, notes, etc).
-Alex - making mind map
-Sonya - expand current styletile and export expanded one and final one
+# **Akira Toriyama Memorial Website**
 
-1 Project Document (See below for template).
-Sonya
+This project aims to create a memorial website dedicated to honoring the legacy of Akira Toriyama, the renowned creator of the Dragon Ball series. In addition to providing a platform for users to express their tributes and memories of Toriyama, the website will also have a brief  information about Akira Toriyama.
 
-2 - 3 Design Feedback Documents (One for each team member - not including the designer).
-Alex adding a 'before' design to the figma
-Chinami and Sonya each need to write a 'design feedback' based on the 'before' design
 
-2 Mockups - (Before & after the design critique).
-Alex is on it
 
-1 Project Handoff Document (See below for template).
-percy is doing this
+## **Team Members**
 
-QA Checklist.
-percy is doing this
+### Chinami Harishima
+*Developer*
 
-7 - 10 completed issues in an issue tracker of your choice (Github/Trello - Issues logged by the same students in your group).
-to tackle after Dev is done
+### Sonya Reed
+*Designer and QA co-lead*
 
-The other content, images, etc created for the project should also be delivered.
--Alex if you can throw in the stuff you have designed 
-i will also add the assets i made
-https://drive.google.com/drive/folders/1aXsmfPmpGMWFrdb-ouMP7B7uqhSoGVxN?usp=sharing
+### Alexander Tan
+*Designer and QA co-lead*
 
-php
-pass
-qa-admin
+### Percy Singleton
+*Designer and QA co-lead*
+
+
+
+# ** Live site URL: https://qa-project.chinamiharashima.com/ **
 
 
 https://qa-project.chinamiharashima.com/
