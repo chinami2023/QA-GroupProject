@@ -44,10 +44,6 @@ body {
     font-size: 27px;
   }
   
-  /* section {
-    padding: 0 10px;
-  }
-   */
   section .nameArea {
     display: flex;
     align-items: center;
@@ -58,10 +54,17 @@ body {
     color: #1C4595;
     font-weight: 700;
     margin-bottom: 0;
+    text-wrap: wrap;
+    width: 100%;
+    overflow-wrap: break-word;
+
   }
   
   section .comment {
     margin-top: 0.5rem;
+    text-wrap: wrap;
+    width: 100%;
+    overflow-wrap: break-word;
   }
   
   .formWrapper {
@@ -74,7 +77,9 @@ body {
     width: 100%;
     height: 90px;
     resize: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
+  
   
   .errorMessage {
     color: red;
@@ -107,8 +112,6 @@ body {
     color: crimson;
   }
 
-  /* ------- */
-
   .rightside{
     max-width: 100% ;
     width: 100%;
@@ -122,6 +125,12 @@ body {
 
 input{
   width: 100%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: "Patrick Hand";
+}
+
+.inp-send{
+  font-size: 24px;
 }
 
 .leftside{
@@ -138,10 +147,43 @@ input{
   padding-top: 3rem;
 }
 
-.one{
+.boxstyle{
   border: 2px solid black;
-  width: 300px;
-  height: 300px;
+  background-color: azure;
+  margin-top: 1rem;
+  box-shadow: 2px 2px 4px rgb(152, 152, 152);
 }
 
+.send-b{
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 1rem;
+  font-size: 16px;
+}
 
+@media (max-width: 568px) {
+
+  .wrapper{
+    margin-bottom: 2rem;
+  }
+
+  .threadWrapper .w80{
+   padding-top: 0;
+   text-align: center;
+   padding-bottom: 2rem;
+  }
+
+  .threadWrapper .leftside img {
+    width: 80%;
+}
+
+.boxstyle{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.no-img{
+  display: none;
+}
+
+}
